@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #474744;
+}
+
+p {
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 400;
+  color: #fffbe0;
+}
+
+section {
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+div {
+  height: 75px;
+  width: 75px;
+  margin: 10px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+div.name {
+  background-color: #ffb400;
+}
+
+div.words {
+  background-color: #2994b2;
+}
+
+button {
+  width: 200px;
+  height: 40px;
+  background-color: #fffbe0;
+}
+
+div.select {
+  background-color: #e78775;
+  border: 2px solid #c84361;
+  transform: scale(.97);
+}
+
+.hidden {
+  display: none;
+}
