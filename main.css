@@ -5,10 +5,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #474744;
+  background-color: #e6ebe0;
 }
 
-p {
+p, button {
   font-family: 'Cinzel Decorative', cursive;
   font-weight: 400;
   color: #fffbe0;
@@ -33,18 +33,27 @@ div {
   text-align: center;
 }
 
-div.name {
+.name {
   background-color: #ffb400;
 }
 
-div.words {
+.words {
   background-color: #2994b2;
+}
+
+.fade {
+  background-color: #720026;
+  opacity: 100%;
 }
 
 button {
   width: 200px;
-  height: 40px;
-  background-color: #fffbe0;
+  height: 45px;
+  background-color: #364958;
+  color: #fffbe0;
+  font-size: .85em;
+  margin-top: 20px;
+  padding-top: 5px;
 }
 
 div.select {

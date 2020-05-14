@@ -24,7 +24,8 @@ let nameDiv= function(house) {
   let div = document.createElement("div");
   let p = document.createElement("p");
 
-  div.className = 'name';
+  div.classList.add('fade')
+  div.classList.add('name');
   p.className = 'hidden';
   p.innerHTML = house.name;
   
@@ -39,7 +40,8 @@ let wordsDiv= function(house) {
   let div = document.createElement("div");
   let p = document.createElement("p");
 
-  div.className = 'words';
+  div.classList.add('fade');
+  div.classList.add('words');
   p.className = 'hidden';
   p.innerHTML = house.words;
 
@@ -50,17 +52,23 @@ let wordsDiv= function(house) {
 
 const randomize = () => {
   let div = document.querySelectorAll('div');
-  let p = document.querySelectorAll('p');
   let divArray = Array.from(div);
+  let words = document.querySelectorAll('.words');
+  let name = document.querySelectorAll('.name');
+  let p = document.querySelectorAll('p');
   let pArray = Array.from(p);
+
+ 
 
   for (let i = 0; i < divArray.length; i++) {
     let target = Math.floor(Math.random() * divArray.length -1) + 1;
     let target2 = Math.floor(Math.random() * divArray.length -1) +1;
     divArray[target].before(divArray[target2]);
     pArray[i].classList.remove('hidden');
+    divArray[i].classList.remove('fade');
   }
 
+ 
   selectDiv(divArray)
 }
 
