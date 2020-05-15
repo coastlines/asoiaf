@@ -67,8 +67,6 @@ const randomize = () => {
     pArray[i].classList.remove('hidden');
     divArray[i].classList.remove('fade');
   }
-
- 
   selectDiv(divArray)
 }
 
