@@ -17,7 +17,8 @@ const getHouse = () => {
     })
 }
 
-
+// create house name divs
+// hide paragraph text + display opening div color
 let nameDiv= function(house) {
   let section = document.getElementById("main");
 
@@ -33,7 +34,8 @@ let nameDiv= function(house) {
   section.appendChild(div);
 }
 
-
+// create house words divs
+// hide paragraph text + display opening div color
 let wordsDiv= function(house) {
   let section = document.getElementById("main");
  
@@ -49,7 +51,8 @@ let wordsDiv= function(house) {
   section.appendChild(div);
 }
 
-
+// randomize the order of all of the divs
+// display paragraph text + house and name div colors
 const randomize = () => {
   let div = document.querySelectorAll('div');
   let divArray = Array.from(div);
@@ -70,6 +73,8 @@ const randomize = () => {
   selectDiv(divArray)
 }
 
+// selected div is given a new color
+// next step: limit selection to two divs at any time
 const selectDiv = (divs) => {
 let selectCount = 0;
 let div =  document.querySelectorAll('div');
@@ -86,3 +91,8 @@ for (let i = 0; i < divArray.length; i++) {
 }
 }
 
+// next step: check for a match between pairs of selected house and word divs
+// next step: if the selected pair is correct, remove the pair
+// next step: if the selected pair is incorrect, animate the second div to show it is not a match
+// next step: add a button to restart or start a new game
+// next step: win screen
